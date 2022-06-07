@@ -16,16 +16,15 @@ class BinarySearchTree(object):
         else:
             self.inserNode(data, self.root)
 
-
     # inserting node function
-     def insertNode(self, data, node):
+    def insertNode(self, data, node):
          if data < node.data:
              if node.leftChild:
                 #  if it's not null
                  self.inserNode(self, data, leftChild)
-            else:
+             else:
                 node.leftChild = Node (data)
-        else:
+         else:
             if node.righChild:
                 self.inserNode(self, data, righChild)
             else:
