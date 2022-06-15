@@ -1,5 +1,6 @@
 
 // ******Speudocode******** //
+
 // 0- Start
 // 1- check if passed args is an array
 //  if passedArray is not an Array return Error msg
@@ -12,6 +13,7 @@
 // 7- pop or remove found assumedLowestValueInArray from original Array
 // 8- return sortedNumberOfGirls
 // 9- stop
+
 
 
 sortMaximumAmount = (rangeOfGirls) => {
