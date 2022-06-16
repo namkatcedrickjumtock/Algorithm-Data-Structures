@@ -5,24 +5,20 @@
 
 
 
-
-// adding the marks
-
-const addStudentsmarks = () => {
+const addStudentsmarks = (arrys) => {
 
     let sum
     let avg
 
-    const Studentmakrs = [2, 67, 92, 6, 4]
+    let legnth = arrys.length
 
-    let legnth = Studentmakrs.length
+    sum = arrys.reduce((elem1, elem2) => elem1 + elem2)
 
-    sum = Studentmakrs.reduce((elem1, elem2) => elem1 + elem2)
+    for (const indx in arrys) {
 
-    for (const indx in Studentmakrs) {
         avg = sum / legnth
     }
-    return `the Average is ${avg} and Makes is :${sum}`;
+    return `the Average is ${Math.floor(avg)} and Makes is :${sum}`;
 }
 
-console.log(addStudentsmarks());
+module.exports = addStudentsmarks
