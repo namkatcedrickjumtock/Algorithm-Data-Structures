@@ -1,8 +1,8 @@
 // While pushing, popping, and peeking are the primary operations associated with a stack,
 
 class Stack {
-
     dataStore = []
+    
     top = 0
 
     push = (element) => {
