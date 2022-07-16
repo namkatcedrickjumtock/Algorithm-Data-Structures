@@ -4,6 +4,9 @@ const { readFileSync, promises: fsPromises, readFile } = require('fs');
 
 // ✅ read file ASYNCHRONOUSLY
 async function asyncReadFile(filename) {
+  
+  
+
 
   try {
 
